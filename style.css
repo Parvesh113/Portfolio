@@ -190,5 +190,8 @@ p.titles:hover::after{
 }
 #mail{
     cursor: pointer;
-
 }
+html{
+    scroll-behaviour: smooth;
+}
+
