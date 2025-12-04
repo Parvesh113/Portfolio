@@ -192,6 +192,7 @@ p.titles:hover::after{
     cursor: pointer;
 }
 html{
-    scroll-behaviour: smooth;
+    scroll-behavior: smooth;
 }
+
 
