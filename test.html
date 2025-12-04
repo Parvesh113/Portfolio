@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/46931ab12b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div id="d1" >
+            <span id="s1">Parvesh Kandregula</span>
+            <span id="s2">
+                <a id="a" class="a1" href="#Home">Home</a>
+                <a id="a" class="a2"href="#About">About</a>
+                <a id="a" class="a3" href="#Academia">Academia</a>
+                <a id="a" class="a4" href="#Works">Works</a>
+                <a id="a" class="a4" href="#contact">Contact</a>
+            </span>
+        </div>
+    <div id="Home">
+        <div id="d2">
+            <span id="s3">
+                <img id="image" src="images/photo1.jpg" alt="This is an image of the person">
+            </span>
+            <span id="s4">
+                Hi! I'm Parvesh Kandregula and I'm from Visakhapatnam. I'm a Web Developer and UI/UX Designer.<br>This is my Resume.
+            </span>
+        </div>
+    </div>
+        <br>
+    <div id="About">
+        <div id="d3">
+            <p id="h1">About</p>
+            <span id="s5">
+                <p><i>I'm a Mechanical Engineering graduate with a strong passion for Web Development. While my academic background has given me hands-on experience with tools like AutoCAD, CATIA, ANSYS, MATLAB, and Mastercam, my current focus is on building modern, responsive, and efficient web applications.
+                    <br>
+                    I’m skilled in HTML, CSS, JavaScript, Python, and version control using Git and GitHub, and I’m currently pursuing a Full-Stack Web Development internship at Social Prachar Institute to gain real-world experience.
+                    <br>
+                    During my engineering, I worked on projects such as a solar-powered water supply system for domestic use and the optimization of WEDM processes using MCDM and ANN methods, which helped me strengthen my analytical thinking and problem-solving skills — qualities I now apply in software and web development.
+                </p></i>
+            </span>
+        </div>
+    </div>
+    <div id="Academia">
+        <div class="titleslist">
+            <p class="titles active" onclick="opentab('Skills', event)">Skills</p>
+            <p class="titles" onclick="opentab('Internships', event)">Internships</p>
+            <p class="titles" onclick="opentab('Education', event)">Education</p>
+        </div>
+        <div class="contents active" id="Skills">
+            <dl>
+                    <dt>Web Development</dt>
+                    <dd><i>Skilled in front-end web development with expertise in HTML, CSS, and JavaScript, capable of building responsive and interactive user interfaces. Also proficient in Python and C programming languages for logic building and problem-solving.</i>
+</dd>
+                    <dt>UI/UX design</dt>
+                    <dd><i>Experienced in UI/UX design using Figma, with the ability to create intuitive layouts, user-centered interfaces, and visually appealing design prototypes that enhance overall user experience.
+</i></dd>
+                    <dt>3D Design and analysis</dt>
+                    <dd><i>Skilled in 3D design and analysis with proficiency in software tools such as AutoCAD, CATIA, ANSYS, and MasterCAM, capable of creating detailed models, performing simulations, and optimizing designs for real-world applications.</i></dd>
+                </dl>
+        </div>
+        <div class="contents" id="Internships">
+            <dl>
+                    <dt>BHEL</dt>
+                    <dd>Completed a four-week internship at BHEL, gaining hands-on experience in pressure vessel and cryo
+    genic chamber fabrication and testing.</dd>
+                    <dt>Teachnook</dt>
+                    <dd> Completed a 1 month internship in Cyber Security, focusing on network protection and threat analysis.</dd>
+                    <dt>Eduskills</dt>
+                    <dd> Completed a 2 month internship on Ethical Hacking.</dd>
+                </dl>
+        </div>
+        <div class="contents" id="Education">
+            <dl>
+                    <dt>Saraswathi Vidya Vihar</dt>
+                    <dd>Completed High School with 9.8 CGPA in 2019</dd>
+                    <dt>Sri Chaitanya Jr. College</dt>
+                    <dd>Completed Intermediate in MPC stream with 84.8% during the academic years 2019-2021</dd>
+                    <dt>Gayatri Vidya Parishad College of Engineering</dt>
+                    <dd>Finished my B.Tech in Mechanical Engineering in 2025 with a 7.11 CGPA</dd>
+                </dl>
+        </div>
+    </div>
+    <div class="Works" id="Works">
+        <h1>My Works</h1>
+        <div id="Work-Content" class="Work-Content">
+            <div id="Solar" class="Work" onclick="openbox('A')">
+                <h3>Solar Powered Water Supply System</h5>
+                    <p>Designed a Water supply system for household and domestic purposes, that runs on solar energy as a part of my design thinking and innovation project.</p>
+            </div>
+            <div id="solar-box" class="work-box">
+                <span class="close" onclick="closebox()">&times;</span>
+                <h3>Solar Powered Water Supply System</h3>
+
+            </div>
+            <div id="WEDM" class="Work" onclick="openbox('B')">
+                <h3>Optimization of W-EDM process by MCDM methods and ANN</h3>
+                <p>Worked on optimizing the Wire-EDM process parameters using Multi Criteria Decision Making Methods like VIKOR, TOPSIS, COPRAS and MOORA along with ANN method.</p>
+            </div>
+            <div id="WEDM-box" class="work-box">
+                <span class="close" onclick="closebox()">&times;</span>
+                <h3>Solar Powered Water Supply System</h3>
+
+            </div>
+            <div id="E-commerce" class="Work" onclick="openbox('C')">
+                <h3>E-Commerce Website</h3>
+                <p>Working on building an E-commerce interface using tools like HTML, CSS and JavaScript</p>
+            </div>
+            <div id="E-commerce-box" class="work-box">
+                <span class="close" onclick="closebox()">&times;</span>
+                <h3>Solar Powered Water Supply System</h3>
+
+            </div>
+        </div>
+    </div>
+    </div>
+<div id="contact" style="background-color: rgb(42, 43, 44); margin: -10 px">
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="row" style="display: flex; gap: 30px; font-size: 1.5em;">
+            <p id="mail" onclick="email()">21131a0348@gvpce.ac.in</p>
+            <p>9876543210</p>
+            <div class="social-icons" style="margin-top: 20px;">
+                <a href="https://www.facebook.com/parvesh.kandregula.10/" id="Social"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" id="Social"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" id="Social"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="contact-right"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

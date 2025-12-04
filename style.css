@@ -1,0 +1,193 @@
+*{
+    user-select: none;
+}
+
+body{
+    background-color: black;
+
+}
+#s1{
+    font-size: 100px;
+    color: aliceblue;
+}
+#d1{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position:sticky;
+    top: 0;
+    background: rgba(77, 77, 77, 0.95);
+    padding-left: 125px;
+    padding-right: 125px;
+    margin-left: -100px;
+    margin-right: -100px;
+    margin-top: -20px;
+
+}
+/* #d1:scrolled{
+    backdrop-filter: blur(10px);
+    background: rgba(39,39,39,0.3);
+} */
+#s2{
+    padding-top: 50px;
+    font-size: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+#a{
+    text-decoration: none;
+    color: orange;
+    margin-bottom: 20px;
+    padding: 3px;
+}
+#a:hover{
+    background: #333333;
+    transform: translate(5px,-5px);
+    transition: 0.3s;
+
+}
+#Home{
+    scroll-margin-top: 1000px;
+    padding-right: 125px;
+    padding-left: 125px;
+}
+#About{
+    scroll-margin-top: 200px;
+    padding-left: 110px;
+    padding-right: 125px;
+}
+#Academia{
+    /* scroll-margin-top: 100px; */
+    padding-left: 150px;
+    padding-right: 250px;
+}
+#d2{
+    margin-top: 150px;
+    margin-left:10px;
+    display: flex;
+    gap: 50px;
+}
+#image{
+    width: 200px;
+    float: left;
+}
+#s4{
+    color: aliceblue;
+    font-size: 50px;
+}
+#d3{
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    min-width: none;
+    max-width: 80%;
+}
+#h1{
+    color: aliceblue;
+    font-size: 50px;
+}
+#s5{
+    color: aliceblue;
+    font-size: 24px;
+}
+.titleslist{
+    color: aliceblue;
+    display: flex;
+    gap: 50px;
+    font-size: 2em;
+}
+.contents{
+    color: aliceblue;
+}
+.titles{
+    display: flex;
+    margin: 20px 0 40px;
+    position: relative;
+    cursor: pointer;
+}
+p.titles::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s;
+}
+p.titles:hover::after{
+    width: 70%;
+}
+.contents dl{
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.contents dl span{
+    color:#b54769;
+}
+.contents{
+    display: none;
+}
+.contents.active{
+    display: block;
+}
+/* .Works{
+    color: aliceblue;
+    padding-right: 125px;
+    padding-left: 125px;
+}
+.Work-Content{
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 50px;
+}
+.Work{
+    background: #262626;
+    padding: 40px;
+    font-size: 1.1em;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+} */
+.Works{
+    color: aliceblue;
+    padding-right: 125px;
+    padding-left: 125px;
+}
+.Work-Content{
+    display: flex;
+}
+.Work{
+    background: #262626;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 500px;
+    cursor: pointer;
+}
+.Work:hover{
+    transition: 0.5s;
+    background: #ff004f;
+    transform: translateY(-5px);
+}
+#contact{
+    color: aliceblue;
+    padding-right: 250px;
+    padding-left: 250px;
+    margin: -10px;
+    border-top-left-radius: -55px;
+    border-top-right-radius: -55px;
+}
+#Social{
+    text-decoration: none;
+    color: rgb(9, 6, 172);
+    font-size: 1.5em;
+    margin-right: 15px;
+
+
+}
+#mail{
+    cursor: pointer;
+}
