@@ -1,7 +1,9 @@
 *{
     user-select: none;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: black;
 
@@ -191,8 +193,7 @@ p.titles:hover::after{
 #mail{
     cursor: pointer;
 }
-html{
-    scroll-behavior: smooth;
-}
+
+
 
 
