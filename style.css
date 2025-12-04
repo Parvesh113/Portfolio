@@ -175,7 +175,7 @@ p.titles:hover::after{
 #contact{
     color: aliceblue;
     padding-right: 250px;
-    padding-left: 250px;
+    padding-left: 150px;
     margin: -10px;
     border-top-left-radius: -55px;
     border-top-right-radius: -55px;
@@ -190,4 +190,5 @@ p.titles:hover::after{
 }
 #mail{
     cursor: pointer;
+
 }
