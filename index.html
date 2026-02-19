@@ -9,17 +9,18 @@
     <script src="https://kit.fontawesome.com/46931ab12b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-        <div id="d1" >
-            <span id="s1"><a href="index.html" style="text-decoration: none; color: aliceblue;">Parvesh Kandregula</a></span>
-            <span id="s2">
-                <a id="a" class="a1" href="#Home">Home</a>
-                <a id="a" class="a2"href="#About">About</a>
-                <a id="a" class="a3" href="#Academia">Academia</a>
-                <a id="a" class="a4" href="#Works">Works</a>
-                <a id="a" class="a4" href="#contact">Contact</a>
-            </span>
-        </div>
-    <div id="Home">
+    <header id="d1">
+        <span id="s1"><a href="index.html" style="text-decoration: none; color: aliceblue;">Parvesh Kandregula</a></span>
+        <nav id="s2">
+            <a class="nav-link a1" href="#Home">Home</a>
+            <a class="nav-link a2" href="#About">About</a>
+            <a class="nav-link a3" href="#Academia">Academia</a>
+            <a class="nav-link a4" href="#Works">Works</a>
+            <a class="nav-link a5" href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="Home">
         <div id="d2">
             <span id="s3">
                 <img id="image" src="Profile.png" alt="This is an image of the person">
@@ -29,9 +30,11 @@
                 <button class="pdf" onclick="window.open('Resume.pdf', '_blank')">View Resume</button>
             </span>
         </div>
-    </div>
-        <br>
-    <div id="About">
+    </section>
+
+    <br>
+
+    <section id="About">
         <div id="d3">
             <p id="h1">About</p>
             <span id="s5">
@@ -40,11 +43,12 @@
                     I’m skilled in HTML, CSS, JavaScript, Python, and version control using Git and GitHub, and I’m currently pursuing a Full-Stack Web Development internship at Social Prachar Institute to gain real-world experience.
                     <br>
                     During my engineering, I worked on projects such as a solar-powered water supply system for domestic use and the optimization of WEDM processes using MCDM and ANN methods, which helped me strengthen my analytical thinking and problem-solving skills — qualities I now apply in software and web development.
-                </p></i>
+                </i></p>
             </span>
         </div>
-    </div>
-    <div id="Academia">
+    </section>
+
+    <section id="Academia">
         <div class="titleslist">
             <p class="titles active" onclick="opentab('Skills', event)">Skills</p>
             <p class="titles" onclick="opentab('Internships', event)">Internships</p>
@@ -52,82 +56,76 @@
         </div>
         <div class="contents active" id="Skills">
             <dl>
-                    <dt>Web Development</dt>
-                    <dd><i>Skilled in front-end web development with expertise in HTML, CSS, and JavaScript, capable of building responsive and interactive user interfaces. Also proficient in Python and C programming languages for logic building and problem-solving.</i>
-</dd>
-                    <dt>UI/UX design</dt>
-                    <dd><i>Experienced in UI/UX design using Figma, with the ability to create intuitive layouts, user-centered interfaces, and visually appealing design prototypes that enhance overall user experience.
-</i></dd>
-                    <dt>3D Design and analysis</dt>
-                    <dd><i>Skilled in 3D design and analysis with proficiency in software tools such as AutoCAD, CATIA, ANSYS, and MasterCAM, capable of creating detailed models, performing simulations, and optimizing designs for real-world applications.</i></dd>
-                </dl>
+                <dt>Web Development</dt>
+                <dd><i>Skilled in front-end web development with expertise in HTML, CSS, and JavaScript, capable of building responsive and interactive user interfaces. Also proficient in Python and C programming languages for logic building and problem-solving.</i></dd>
+                
+                <dt>UI/UX design</dt>
+                <dd><i>Experienced in UI/UX design using Figma, with the ability to create intuitive layouts, user-centered interfaces, and visually appealing design prototypes that enhance overall user experience.</i></dd>
+                
+                <dt>3D Design and analysis</dt>
+                <dd><i>Skilled in 3D design and analysis with proficiency in software tools such as AutoCAD, CATIA, ANSYS, and MasterCAM, capable of creating detailed models, performing simulations, and optimizing designs for real-world applications.</i></dd>
+            </dl>
         </div>
         <div class="contents" id="Internships">
             <dl>
-                    <dt>BHEL</dt>
-                    <dd>Completed a four-week internship at BHEL, gaining hands-on experience in pressure vessel and cryo
-    genic chamber fabrication and testing.</dd>
-                    <dt>Teachnook</dt>
-                    <dd> Completed a 1 month internship in Cyber Security, focusing on network protection and threat analysis.</dd>
-                    <dt>Eduskills</dt>
-                    <dd> Completed a 2 month internship on Ethical Hacking.</dd>
-                </dl>
+                <dt>BHEL</dt>
+                <dd>Completed a four-week internship at BHEL, gaining hands-on experience in pressure vessel and cryogenic chamber fabrication and testing.</dd>
+                
+                <dt>Teachnook</dt>
+                <dd>Completed a 1 month internship in Cyber Security, focusing on network protection and threat analysis.</dd>
+                
+                <dt>Eduskills</dt>
+                <dd>Completed a 2 month internship on Ethical Hacking.</dd>
+            </dl>
         </div>
         <div class="contents" id="Education">
             <dl>
-                    <dt>Saraswathi Vidya Vihar</dt>
-                    <dd>Completed High School with 9.8 CGPA in 2019</dd>
-                    <dt>Sri Chaitanya Jr. College</dt>
-                    <dd>Completed Intermediate in MPC stream with 84.8% during the academic years 2019-2021</dd>
-                    <dt>Gayatri Vidya Parishad College of Engineering</dt>
-                    <dd>Finished my B.Tech in Mechanical Engineering in 2025 with a 7.11 CGPA</dd>
-                </dl>
+                <dt>Saraswathi Vidya Vihar</dt>
+                <dd>Completed High School with 9.8 CGPA in 2019</dd>
+                
+                <dt>Sri Chaitanya Jr. College</dt>
+                <dd>Completed Intermediate in MPC stream with 84.8% during the academic years 2019-2021</dd>
+                
+                <dt>Gayatri Vidya Parishad College of Engineering</dt>
+                <dd>Finished my B.Tech in Mechanical Engineering in 2025 with a 7.11 CGPA</dd>
+            </dl>
         </div>
-    </div>
-    <div class="Works" id="Works">
-    <h1>My Works</h1>
+    </section>
 
-    <!-- MECHANICAL SECTION -->
-    <h2 class="section-title">Mechanical Projects</h2>
-    <div class="Work-Content">
+    <section class="Works" id="Works">
+        <h1>My Works</h1>
 
+        <h2 class="section-title">Mechanical Projects</h2>
+        <div class="Work-Content">
             <div class="Work" onclick="openbox('solar')">
                 <h3>Solar Powered Water Supply System</h3>
                 <p>Click to view detailed project explanation.</p>
             </div>
-
             <div class="Work" onclick="openbox('wedm')">
                 <h3>Optimization of W-EDM Process</h3>
                 <p>Click to view detailed project explanation.</p>
             </div>
-
         </div>
 
-
-        <!-- IT SECTION -->
         <h2 class="section-title">IT Projects</h2>
         <div class="Work-Content">
-
-            <div class="Work preview-box" onclick="openbox('crime')">
-                <img src="crime-preview.png" class="preview-img">
+            <a href="https://crime-rate-analysis-ten.vercel.app/" target="_blank" class="Work preview-box project-link">
+                <img src="crime-preview.jpg" class="preview-img" alt="Crime Rate Analysis">
                 <div class="preview-text">
                     <h3>Crime Rate Analysis</h3>
                     <p>Analyzed crime data using Python and visualization tools.</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="Work preview-box" onclick="openbox('resale')">
-                <img src="resale-preview.png" class="preview-img">
+            <a href="#" target="_blank" class="Work preview-box project-link">
+                <img src="resale-preview.png" class="preview-img" alt="Used Car Re-Sale Platform">
                 <div class="preview-text">
                     <h3>Used Car Re-Sale Platform</h3>
                     <p>Built a dynamic car listing website with filtering and UI features.</p>
                 </div>
-            </div>
-
+            </a>
         </div>
 
-
-        <!-- MODAL -->
         <div id="work-modal" class="work-modal">
             <div class="modal-content">
                 <span class="close" onclick="closebox()">&times;</span>
@@ -135,33 +133,23 @@
                 <p id="modal-description"></p>
             </div>
         </div>
+    </section>
 
-    </div>
-
-<div id="contact" style="background-color: rgb(42, 43, 44); margin-right: -100px">
-    <div class="container">
-        <h1 class="sub-title">Contact Me</h1>
-        <div class="row" style="display: flex; gap: 30px; font-size: 1.5em;">
-            <p id="mail" onclick="email()">parveshkandregula@gmail.com</p>
-            <p>+91 6302932821</p>
-            <div class="social-icons" style="margin-top: 20px; display:inline-flex;">
-                <a href="https://www.facebook.com/parvesh.kandregula.10/" id="Social"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/parvesh_kandregula?igsh=MTl3cmNzZjFrOWppdg==" id="Social"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/parvesh-kandregula-319077269?utm_source=share_via&utm_content=profile&utm_medium=member_android" id="Social"><i class="fa-brands fa-linkedin"></i></a>
+    <footer id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="row" style="display: flex; gap: 30px; font-size: 1.5em; flex-wrap: wrap;">
+                <p id="mail" onclick="email()">parveshkandregula@gmail.com</p>
+                <p>+91 6302932821</p>
+                <div class="social-icons" style="display:inline-flex; gap: 15px;">
+                    <a href="https://www.facebook.com/parvesh.kandregula.10/" class="Social"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/parvesh_kandregula?igsh=MTl3cmNzZjFrOWppdg==" class="Social"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/parvesh-kandregula-319077269?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="Social"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
             </div>
         </div>
-        <div class="contact-right"></div>
-</div>
-<script src="script.js"></script>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-

@@ -1,5 +1,6 @@
 var tablinks = document.getElementsByClassName("titles");
 var tabcontents = document.getElementsByClassName("contents");
+
 function opentab(tabname, e){
     for(tablink of tablinks){
         tablink.classList.remove("active");
@@ -10,46 +11,35 @@ function opentab(tabname, e){
     e.currentTarget.classList.add("active");
     document.getElementById(tabname).classList.add("active");
 }
+
 function email() {
     window.location.href="mailto:21131a0392@gvpce.ac.in"
 }
-var smallboxes = document.getElementsByClassName("Work");
-var bigboxes = document.getElementsByClassName("");
-function openbox(project){
 
+function openbox(project){
     const modal = document.getElementById("work-modal");
     const title = document.getElementById("modal-title");
     const description = document.getElementById("modal-description");
 
     const projects = {
-
         solar:{
             title:"Solar Powered Water Supply System",
-            description:"[Edit this later] Detailed explanation about design, components used, calculations, implementation and testing results."
+            description:"[Edit this later] Detailed explanation about design, components, calculations and implementation."
         },
-
         wedm:{
             title:"Optimization of W-EDM Process",
-            description:"[Edit this later] Detailed explanation about VIKOR, TOPSIS, COPRAS, MOORA and ANN implementation."
-        },
-
-        crime:{
-            title:"Crime Rate Analysis",
-            description:"Performed data cleaning, exploratory data analysis, trend visualization and statistical interpretation using Python libraries."
-        },
-
-        resale:{
-            title:"Used Car Re-Sale Platform",
-            description:"Developed a responsive car listing platform with dynamic filtering, UI components and interactive features."
+            description:"[Edit this later] Explanation about VIKOR, TOPSIS, COPRAS, MOORA and ANN."
         }
-
     };
 
-    title.innerText = projects[project].title;
-    description.innerText = projects[project].description;
-    modal.style.display = "flex";
+    // Safety check to ensure the project exists in the object
+    if (projects[project]) {
+        title.innerText = projects[project].title;
+        description.innerText = projects[project].description;
+        modal.style.display="flex";
+    }
 }
 
 function closebox(){
-    document.getElementById("work-modal").style.display = "none";
+    document.getElementById("work-modal").style.display="none";
 }
