@@ -22,26 +22,27 @@ function openbox(project){
     const description = document.getElementById("modal-description");
 
     const projects = {
-        A: {
-            title: "Solar Powered Water Supply System",
-            description: "Designed and implemented a solar-powered domestic water supply system focusing on sustainable energy usage and cost efficiency."
+
+        solar:{
+            title:"Solar Powered Water Supply System",
+            description:"[Edit this later] Detailed explanation about design, components used, calculations, implementation and testing results."
         },
-        B: {
-            title: "Optimization of W-EDM Process",
-            description: "Optimized WEDM process parameters using MCDM methods like VIKOR, TOPSIS, COPRAS, MOORA along with Artificial Neural Networks."
+
+        wedm:{
+            title:"Optimization of W-EDM Process",
+            description:"[Edit this later] Detailed explanation about VIKOR, TOPSIS, COPRAS, MOORA and ANN implementation."
         },
-        C: {
-            title: "E-Commerce Website",
-            description: "Built an interactive e-commerce interface using HTML, CSS, and JavaScript with responsive design and dynamic features."
+
+        crime:{
+            title:"Crime Rate Analysis",
+            description:"Performed data cleaning, exploratory data analysis, trend visualization and statistical interpretation using Python libraries."
         },
-        crime: {
-            title: "Crime Rate Analysis",
-            description: "Performed data analysis on crime datasets using Python, visualization tools, and statistical methods to identify crime trends and patterns."
-        },
-        resale: {
-            title: "Re-Sale of Used Cars",
-            description: "Developed a used car reselling platform featuring dynamic listings, filtering options, and responsive UI for better user experience."
+
+        resale:{
+            title:"Used Car Re-Sale Platform",
+            description:"Developed a responsive car listing platform with dynamic filtering, UI components and interactive features."
         }
+
     };
 
     title.innerText = projects[project].title;
